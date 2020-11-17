@@ -164,7 +164,7 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\..\MediaManager.Entity\MediaManager.Entity.csproj">
+    <ProjectReference Include="..\MediaManager.Entity\MediaManager.Entity.csproj">
       <Project>{bf4c9d35-628a-48b5-9873-c25a9ec39a53}</Project>
       <Name>MediaManager.Entity</Name>
     </ProjectReference>

@@ -3,19 +3,19 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30711.63
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediaManager.EAI", "..\MediaManager.EAI\MediaManager.EAI.csproj", "{51459213-7592-489B-BAEA-E58E8A24394B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediaManager.EAI", "MediaManager.EAI\MediaManager.EAI.csproj", "{51459213-7592-489B-BAEA-E58E8A24394B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediaManager.Entity", "..\MediaManager.Entity\MediaManager.Entity.csproj", "{BF4C9D35-628A-48B5-9873-C25A9EC39A53}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediaManager.Entity", "MediaManager.Entity\MediaManager.Entity.csproj", "{BF4C9D35-628A-48B5-9873-C25A9EC39A53}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediaManager.Repository", "..\MediaManager.Repository\MediaManager.Repository.csproj", "{7AE9969C-CD83-470E-A313-780FBABC020F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediaManager.Repository", "MediaManager.Repository\MediaManager.Repository.csproj", "{7AE9969C-CD83-470E-A313-780FBABC020F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediaManager.Tools", "..\MediaManager.Tools\MediaManager.Tools.csproj", "{4B03A509-E690-491D-A39D-1A2513300071}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediaManager.Tools", "MediaManager.Tools\MediaManager.Tools.csproj", "{4B03A509-E690-491D-A39D-1A2513300071}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediaManager.Bll", "..\MediaManager.Bll\MediaManager.Bll.csproj", "{DAF06FCD-B9AD-4C28-ACD3-ACB323A2DA04}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediaManager.Bll", "MediaManager.Bll\MediaManager.Bll.csproj", "{DAF06FCD-B9AD-4C28-ACD3-ACB323A2DA04}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaManager.Admin", "MediaManager.Admin\MediaManager.Admin.csproj", "{711C5EF6-5274-4503-945D-B71855031865}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaManager.Web", "..\MediaManager.Web\MediaManager.Web.csproj", "{4036746C-D0FA-48C5-8AEB-06111F11132D}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaManager.Web", "MediaManager.Web\MediaManager.Web.csproj", "{4036746C-D0FA-48C5-8AEB-06111F11132D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
