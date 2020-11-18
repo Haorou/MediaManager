@@ -6,32 +6,16 @@ using System.Text;
 
 namespace MediaManager.Repository
 {
-    public class SaisonRepository : IRepository
+    public class SaisonRepository : RepositoryBase<Saison>, IRepository<Saison>
     {
-        private MediaManagerContext _context;
+        public SaisonRepository(MediaManagerContext context) : base(context) { }
 
-        public void Dispose()
-        {
-
-        }
-
-        public SaisonRepository(MediaManagerContext context)
-        {
-            _context = context;
-        }
-
-        public List<Saison> GetAll()
-        {
-            var elements = _context.Saisons.ToList();
-            return elements;
-        }
-
-        public Saison Get(int id)
+        public override Saison Get(int id)
         {
             return _context.Saisons.Single(x => x.Id == id);
         }
 
-        public void Save(Saison element)
+        public override void Save(Saison element)
         {
             if (element.Id > 0)
             {
@@ -47,7 +31,7 @@ namespace MediaManager.Repository
             }
         }
 
-        public void Delete(int id)
+        public override void Delete(int id)
         {
             var elementDb = _context.Saisons.Single(x => x.Id == id);
             _context.Saisons.Remove(elementDb);

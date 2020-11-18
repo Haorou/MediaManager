@@ -9,13 +9,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\MediaManager.Entity\MediaManager.Entity.csproj" />
-    <ProjectReference Include="..\MediaManager.Repository\MediaManager.Repository.csproj" />
-    <ProjectReference Include="..\MediaManager.Tools\MediaManager.Tools.csproj" />
+    <Folder Include="Properties\" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Properties\" />
+    <ProjectReference Include="..\MediaManager.Entity\MediaManager.Entity.csproj" />
+    <ProjectReference Include="..\MediaManager.Repository\MediaManager.Repository.csproj" />
+    <ProjectReference Include="..\MediaManager.Tools\MediaManager.Tools.csproj" />
   </ItemGroup>
 
 </Project>

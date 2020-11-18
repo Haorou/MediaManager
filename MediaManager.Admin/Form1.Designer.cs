@@ -1,4 +1,8 @@
 ﻿
+using MediaManager.Bll;
+using MediaManager.Entity;
+using System;
+
 namespace MediaManager.Admin
 {
     partial class Form1
@@ -102,6 +106,7 @@ namespace MediaManager.Admin
             this.buttonEnregistrer.TabIndex = 6;
             this.buttonEnregistrer.Text = "Enregistrer";
             this.buttonEnregistrer.UseVisualStyleBackColor = true;
+            this.buttonEnregistrer.Click += new System.EventHandler(this.buttonEnregistrer_Click);
             // 
             // textBoxDuree
             // 
@@ -156,6 +161,7 @@ namespace MediaManager.Admin
         private System.Windows.Forms.TextBox textBoxDuree;
         private System.Windows.Forms.TextBox textBoxNom;
         private System.Windows.Forms.DateTimePicker dateTimePickerSortie;
+
     }
 }
 

@@ -15,7 +15,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediaManager.Bll", "MediaMa
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaManager.Admin", "MediaManager.Admin\MediaManager.Admin.csproj", "{711C5EF6-5274-4503-945D-B71855031865}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MediaManager.Web", "MediaManager.Web\MediaManager.Web.csproj", "{4036746C-D0FA-48C5-8AEB-06111F11132D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MediaManager.Web", "MediaManager.Web\MediaManager.Web.csproj", "{4036746C-D0FA-48C5-8AEB-06111F11132D}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

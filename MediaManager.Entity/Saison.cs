@@ -12,5 +12,7 @@ namespace MediaManager.Entity
         public int Numero { get; set; }
         public DateTime? DateSortie { get; set; }
         public List<Episode> Episodes { get; set; }
+        public int SerieId { get; set; }
+        public Serie Serie { get; set; }
     }
 }

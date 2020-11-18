@@ -6,39 +6,23 @@ using System.Text;
 
 namespace MediaManager.Repository
 {
-    public class ActeurRepository : IRepository
+    public class ActeurRepository : RepositoryBase<Acteur>, IRepository<Acteur>
     {
-        private MediaManagerContext _context;
 
-        public void Dispose()
-        {
+        public ActeurRepository(MediaManagerContext context) : base(context) {}
 
-        }
-
-        public ActeurRepository(MediaManagerContext context)
-        {
-            _context = context;
-        }
-
-        public List<Acteur> GetAll()
-        {
-            var elements = _context.Acteurs.ToList();
-            return elements;
-        }
-
-        public Acteur Get(int id)
+        public override Acteur Get(int id)
         {
             return _context.Acteurs.Single(x => x.Id == id);
         }
 
-        public void Save(Acteur element)
+        public override void Save(Acteur element)
         {
             if (element.Id > 0)
             {
                 var elementDb = _context.Acteurs.Single(x => x.Id == element.Id);
                 elementDb.Nom = element.Nom;
                 elementDb.Prenom = element.Prenom;
-                elementDb.Display = element.Display;
                 _context.Update(elementDb);
             }
             else
@@ -47,7 +31,7 @@ namespace MediaManager.Repository
             }
         }
 
-        public void Delete(int id)
+        public override void Delete(int id)
         {
             var elementDb = _context.Acteurs.Single(x => x.Id == id);
             _context.Acteurs.Remove(elementDb);

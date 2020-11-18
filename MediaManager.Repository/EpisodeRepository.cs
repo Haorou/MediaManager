@@ -6,32 +6,16 @@ using System.Text;
 
 namespace MediaManager.Repository
 {
-    public class EpisodeRepository : IRepository
+    public class EpisodeRepository : RepositoryBase<Episode>, IRepository<Episode>
     {
-        private MediaManagerContext _context;
+        public EpisodeRepository(MediaManagerContext context) : base(context) { }
 
-        public void Dispose()
-        {
-
-        }
-
-        public EpisodeRepository(MediaManagerContext context)
-        {
-            _context = context;
-        }
-
-        public List<Episode> GetAll()
-        {
-            var elements = _context.Episodes.ToList();
-            return elements;
-        }
-
-        public Episode Get(int id)
+        public override Episode Get(int id)
         {
             return _context.Episodes.Single(x => x.Id == id);
         }
 
-        public void Save(Episode element)
+        public override void Save(Episode element)
         {
             if (element.Id > 0)
             {
@@ -48,7 +32,7 @@ namespace MediaManager.Repository
             }
         }
 
-        public void Delete(int id)
+        public override void Delete(int id)
         {
             var elementDb = _context.Episodes.Single(x => x.Id == id);
             _context.Episodes.Remove(elementDb);
